@@ -1,6 +1,7 @@
 class People:
     def __init__(self,name):
         self.name = name
+        
 
 
 
@@ -19,7 +20,8 @@ class Name:
     
     def names(self):
         print(self)
-
+   
+ 
 
 class People4(People,People1,Run,Name):
     def __init__(self, name,age):
@@ -28,13 +30,15 @@ class People4(People,People1,Run,Name):
     
     def __str__(self):
         return f'{self.name} {self.age}'
-
 human = People4('Asror', 19)
-print(human)
-human.run()
-human.names()
-print(human.age)
-print(human.name)
+
+
+
+# print(human)
+# human.run()
+# human.names()
+# print(human.age)
+# print(human.name)
 
 
 
